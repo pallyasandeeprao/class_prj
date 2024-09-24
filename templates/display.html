@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+</head>
+<body>
+<table border="2px">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>pname</th>
+        <th>pcode</th>
+        <th>pquantity</th>
+        <th>pexpdate</th>
+    </tr>
+    </thead>
+    <tbody>
+    {%for i in form%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.p_name}}</td>
+        <td>{{i.p_code}}</td>
+        <td>{{i.p_quantity}}</td>
+        <td>{{i.p_exp_data}}</td>
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>
+</body>
+</html>
